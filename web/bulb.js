@@ -22,7 +22,7 @@ function connect() {
 	console.log('Requesting Bluetooth Device...');
 	navigator.bluetooth.requestDevice(
 		{
-			filters: [{ name: 'Galaxy S8+' }]
+			acceptAllDevices: true
 		})
 		.then(device => {
 			console.log('> Found ' + device.name);
