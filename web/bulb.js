@@ -3,6 +3,11 @@
 let ledCharacteristic = null;
 let poweredOn = false;
 
+function fetchSome() {
+	fetch('https://api.github.com/users/mwmaleks/repos?ad=132&sessionId=23123')
+		.then(() => alert('ok'));
+}
+
 function onConnected() {
 	document.querySelector('.connect-button').classList.add('hidden');
 	document.querySelector('.color-buttons').classList.remove('hidden');
