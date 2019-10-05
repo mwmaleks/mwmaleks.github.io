@@ -5,31 +5,23 @@
     <title>Magic Blue</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="appleid-signin-client-id" content="123sdlfksjdf039jf0sjf83ndl">
+    <meta name="appleid-signin-scope" content="/">
+    <meta name="appleid-signin-redirect-uri" content="https://mwmaleks.github.io/api/v3/auth">
+    <meta name="appleid-signin-state" content="true">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
     <link rel="stylesheet" href="styles.css" />
 	<link rel="manifest" href="manifest.json" />
+	<style>
+		.signin-button {
+            width: 210px;
+            height: 40px;
+        }
+	</style>
 
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-	<script>
-		window['_fs_debug'] = false;
-		window['_fs_host'] = 'fullstory.com';
-		window['_fs_org'] = 'C14K1';
-		window['_fs_namespace'] = 'FS';
-		(function(m,n,e,t,l,o,g,y){
-			if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-			g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
-			o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='fs.js';
-			y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-			g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
-			g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
-			g.log = function(a,b) { g("log", [a,b]) };
-			g.consent=function(a){g("consent",!arguments.length||a)};
-			g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-			g.clearUserCookie=function(){};
-		})(window,document,window['_fs_namespace'],'script','user');
-	</script>
 </head>
 
 <body>
@@ -79,6 +71,7 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.4.0/annyang.min.js"></script>
     <script src="bulb.js"></script>
+	<div id="appleid-signin" class="signin-button" data-color="black" data-border="true" data-type="sign in"></div>
+    <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
 </body>
-
 </html>
