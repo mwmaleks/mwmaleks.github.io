@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.mobilejs.twa",
+    "sha256_cert_fingerprints": [
+      "4F:9E:C8:84:26:FB:00:57:BE:62:A6:78:02:2C:8E:23:67:AF:11:63:4B:F5:50:D6:BD:17:BF:6B:6D:EB:FD:4B"
+    ]
+  }
+}]
